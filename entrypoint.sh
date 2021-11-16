@@ -14,7 +14,7 @@ echo "===== Running Python Linter - '$2' ====="
 echo "Django project? '$7'"
 
 echo "Running mypy"
-mypy "$1" --show-error-codes --show-error-context --pretty ${3}
+mypy $(find $1 -name "*.py") --show-error-codes --show-error-context --pretty ${3}
 
 echo "Running black"
 if [ "$7" ]; then
