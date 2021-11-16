@@ -13,6 +13,9 @@ set -e
 echo "===== Running Python Linter - '$2' ====="
 echo "Django project? '$7'"
 
+echo "Installing dependencies"
+pip install -r ./requirements.txt
+
 echo "Running mypy"
 mypy $(find $1 -name "*.py") --show-error-codes --show-error-context --pretty ${3}
 
