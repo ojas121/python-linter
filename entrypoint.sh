@@ -17,6 +17,7 @@ echo "Installing dependencies"
 pip install -r ./requirements.txt
 
 if [ "$7" ]; then
+  echo "No."
 
 else
   if [ "$2" = "high" ]; then
