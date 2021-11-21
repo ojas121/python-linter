@@ -18,17 +18,17 @@ echo "Linting currently disabled, no checks run!"
 
 # echo "Installing dependencies"
 # pip install -r ./requirements.txt
-if [ "$2" = "high" ]; then
-#  echo "Running pylint"
-#  pylint "$1" ${4}
+# if [ "$2" = "high" ]; then
+#   echo "Running pylint"
+#   pylint "$1" ${4}
   
-elif [ "$2" = "medium" ]; then
-#  echo "Running pylint"
-#  pylint "$1" --fail-under=8 ${4}
+# elif [ "$2" = "medium" ]; then
+#   echo "Running pylint"
+#   pylint "$1" --fail-under=8 ${4}
 
-else
-#  echo "Running pylint"
-#  pylint "$1" --exit-zero ${4}
-fi
+# else
+#   echo "Running pylint"
+#   pylint "$1" --exit-zero ${4}
+# fi
 
 echo "Done 🎉" ; echo ""
